@@ -24,6 +24,7 @@ Notas Generales sobre Programacion.
   },
 ```
 
+
 ### Librerias Necesarias
 ``` Paquetes
 Microsoft.EntityFrameworkCore
@@ -50,7 +51,11 @@ dotnet add package MySql.Data --version 8.3.0
 var connectionString = builder.Configuration.GetConnectionString("Linux");
 builder.Services.AddDbContext<Base_Datos>(options => options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 11))));
 ```
-
+Detectar Version Automaticamente
+```
+builder.Services.AddDbContext<Base_Datos>(options =>
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+```
 ### Migraciones con Dotnet ef
 
 #### Creacion Migracion
