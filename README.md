@@ -43,6 +43,38 @@ Microsoft.AspNetCore.Identity.UI
 ```
 dotnet add package MySql.Data --version 8.3.0
 ```
+```
+dotnet add package Microsoft.EntityFrameworkCore --version 8.0.1
+```
+```
+dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 8.0.1
+```
+```
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 8.0.1
+```
+```
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 8.0.1
+```
+```
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 8.0.1
+```
+```
+dotnet add package Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation --version 8.0.1
+```
+```
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 8.0.0
+```
+```
+dotnet add package Pomelo.EntityFrameworkCore.MySql --version 8.0.0-beta.2
+```
+```
+dotnet add package Microsoft.AspNetCore.Identity.UI --version 8.0.1
+```
+
+
+
+
+
 
 ### Configuraciones en Archivo Program
 #### Acceso a Base Datos
