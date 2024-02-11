@@ -37,6 +37,11 @@ Pomelo.EntityFrameworkCore.MySql
 Microsoft.AspNetCore.Identity.UI
 ```
 
+###
+## Agregar Paquete
+```
+dotnet add package MySql.Data --version 8.3.0
+```
 
 ### Configuraciones en Archivo Program
 #### Acceso a Base Datos
