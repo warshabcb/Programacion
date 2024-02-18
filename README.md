@@ -75,7 +75,10 @@ dotnet add package Microsoft.AspNetCore.Identity.UI --version 8.0.1
 ```
 dotnet tool install --global dotnet-aspnet-codegenerator
 ```
-
+## Crear controlador con Codigo Terminal
+```
+dotnet aspnet-codegenerator controller -name FisicosController -outDir Controllers
+```
 
 
 
