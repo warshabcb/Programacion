@@ -88,6 +88,12 @@ Detectar Version Automaticamente
 builder.Services.AddDbContext<Base_Datos>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 ```
+
+#### Insertar Usuario Script
+```
+INSERT INTO `AspNetUsers` (`Id`, `Discriminator`, `Nombre`, `PrimerApellido`, `SegundoApellido`, `Telefono`, `Estado`, `UserName`, `NormalizedUserName`, `Email`, `NormalizedEmail`, `EmailConfirmed`, `PasswordHash`, `SecurityStamp`, `ConcurrencyStamp`, `PhoneNumber`, `PhoneNumberConfirmed`, `TwoFactorEnabled`, `LockoutEnd`, `LockoutEnabled`, `AccessFailedCount`) VALUES
+('463b50c7-ede6-4b5c-84ca-3e8de342bd1e', 'Usuario', 'Warshab', 'Contreras', 'Bustos', '+50687187484', 0, 'warshab.contreras@gmail.com', 'WARSHAB.CONTRERAS@GMAIL.COM', 'warshab.contreras@gmail.com', 'WARSHAB.CONTRERAS@GMAIL.COM', 0, 'AQAAAAIAAYagAAAAEN7ZSJIwebjAiqvt4n6+EoslmorUc9iFeS4FT3425+fbvx8UwXlgyHsT0Y73kdZ4eQ==', 'YJAET2KJUFYXYZFTT54EKFAXVM3BYRKT', 'b21823f1-705a-4c76-9251-0d96fd8891e8', NULL, 0, 0, NULL, 1, 0);
+```
 ### Migraciones con Dotnet ef
 
 #### Creacion Migracion
