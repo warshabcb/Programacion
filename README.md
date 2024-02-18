@@ -71,6 +71,11 @@ dotnet add package Pomelo.EntityFrameworkCore.MySql --version 8.0.0-beta.2
 dotnet add package Microsoft.AspNetCore.Identity.UI --version 8.0.1
 ```
 
+## Algunas Herramientas
+```
+dotnet tool install --global dotnet-aspnet-codegenerator
+```
+
 
 
 
