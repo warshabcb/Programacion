@@ -121,3 +121,20 @@ dotnet ef database update
 ```
 dotnet ef database drop
 ```
+
+## MVC Notas 
+
+#### Definir el Layout a Utilizar
+```
+@{
+    Layout = "~/Views/Shared/_MiLayout.cshtml";
+}
+```
+or
+```
+public ActionResult MiAccion()
+{
+    return View("MiVista", "_MiLayout");
+}
+```
+
